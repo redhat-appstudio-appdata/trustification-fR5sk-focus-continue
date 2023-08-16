@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: bombastic-api
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/ulilleen-tenant/trustification/bombastic-api@sha256:1bf4c139263522554b4884164a227d8053a2b10f644474878f5783071cda3a14
+        name: container-image
+        resources: {}
+status: {}
